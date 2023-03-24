@@ -1,0 +1,445 @@
+sammy@Ubuntu22:~$ sudo docker ps -a
+[sudo] password for sammy: 
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+sammy@Ubuntu22:~$ sudo docker system prune -a
+WARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all images without at least one container associated to them
+  - all build cache
+
+Are you sure you want to continue? [y/N] y
+Deleted Networks:
+kind
+
+Deleted Images:
+untagged: gcr.io/k8s-minikube/kicbase:v0.0.37
+untagged: gcr.io/k8s-minikube/kicbase@sha256:8bf7a0e8a062bc5e2b71d28b35bfa9cc862d9220e234e86176b3785f685d8b15
+deleted: sha256:01c0ce65fff70ab1f019aa14679c46b23331bd108ae899438e589673efaa9c00
+deleted: sha256:d7b13650aaab86e4aca9b1054063cb8c9da78d0ecc9d3d10e3155f44409d9f69
+deleted: sha256:4dee629460cdbeb08e32f5360709a45fcf78cc755c56ead72163f9bedc58ff6c
+deleted: sha256:aa336e763a41dd4d4b69e9b733ec3910893dacc6c6efb879fe3f8452e341d381
+deleted: sha256:b4942654beeb744161bf871c5ccc0fbfb414e8ced7bd5a01e40b24928b1bb1b8
+deleted: sha256:fc3b419c2b037ec5fdd2ba65a2c943c3b41e0fad81b431df0e062ccf436a4314
+deleted: sha256:4eaf0028d6300e10373ebbdff4d68d36cf4d757d9890c568088951e2c0694ae9
+deleted: sha256:1e76b05debeea8916311cd6e1e722d8fdaa618904495aaac87bb15c48acaebb6
+deleted: sha256:dd25ce5067204213cdd96d29e844373e9d5e672ee7f2ff9d795941ef817bd254
+deleted: sha256:bb50e63eed0215d8a765f2a3d1005e9b6bc5f15f563c6cc699e976f515222d2a
+deleted: sha256:1a68408d912046a59bf5652786851bfddab11d52317f1b4cb41cfe509eee79db
+deleted: sha256:72d880e9f4b0310c6a0e1b859bd7d7419f417d1d38a63817751d532e39739520
+deleted: sha256:3026056e0b9eec3eae36f8a8a00abb7af6739c5b4de76f1e2944f11d48b54dbc
+deleted: sha256:dca844b3656360e47bb7438dfb5339eb3fd413efc251025ac173beed278e802d
+deleted: sha256:38cb803ea5d5d55e806bc0cd43f3227a43a87cf7a286361552f642947e70b8e1
+deleted: sha256:133b3f5a43d739d78757b0b773cf1e9559c298bbf83c74aa81b5116db9872129
+deleted: sha256:9b9ee06d3c0fe0afec71dbe420a37702fbe5b24752e4d54b00881c7c72104744
+deleted: sha256:2ff6d75af8db089628d3b90a7f1a5d7e563ecc2c947a03a0d5df89eee30da00d
+deleted: sha256:84d84f336e7fc1d73a57fab0e55c2f9ab42aa6cb7482746c7cf00117da6accbb
+deleted: sha256:626431061742f534d7acd7838112a657da026ce97baa8351f6e8fc1cd7e24b79
+deleted: sha256:f2e409d5acabc800414fdd43600278c4e66178d582fac085304bb360c92c96e5
+deleted: sha256:114f3bce773d8ba273d51b8643a221073a96ce4cb50484f4628962544a30c609
+deleted: sha256:6be80a4fff5cd424204c0a6ee4d1f6f6403da6e01847ca17b4b09f311d933d63
+deleted: sha256:7c8f31d83bea70f7aa242ff1749062b1b4ca6d1dc14335e1b7086f9eb012bcf5
+deleted: sha256:41e80d884bdc4272d38a4fff6006ba2340bf73986e0ef4e9aee19aa022a1a055
+deleted: sha256:c6aeceb53289709b9da47a45a443f8e3eb95c6ae68f952d06434101b4a79cfd0
+deleted: sha256:0df5b3b7c866e1e24d9d463a458b5687977f4afea9fa7f3dae2ccf43709a8df8
+deleted: sha256:208d8e805cb54676b6dcd4141d0ae7bdcc4f76c7c8cb6cef7f20970c418b54aa
+deleted: sha256:74cb1e81cca6ed9f914e2490694dd580b9cffb043a13500e2adc3f09b4330df3
+deleted: sha256:ab492c03f7e5a89f325f8138d96bdd4a5bfd8bcaaa9c63bdaefbe22d12359793
+deleted: sha256:ac2511daba3102dbebb7a15cb39c1789e886e506d67fd2b5be878cca4c3a7360
+deleted: sha256:b8a0db00b9ba448664a233c3b013db75289a45e1c57a5406cbde05d00835dcef
+deleted: sha256:b051bdc043362deeaa72299cc0f87cdaddde560b38abfba9f35402c5d803cb8f
+deleted: sha256:2227ca8f19c7d2132bcbfc633666d3ee4e6006ff79147df1a85e48def9625415
+deleted: sha256:140c7a3f6d3239a4196a64e3f8d244f80fd94cb1d0ea4299af0f03be4ecab30c
+deleted: sha256:7905ddf047c216f86cc47110d09b894a5a8746c6d00082430ab72af68205649d
+deleted: sha256:0bf09fd779bfc25b3595032a694caeb907598b2280e4651e433bacc0ba02636d
+deleted: sha256:4452bb0fbf01e87ba0bb453a8bd5e7b348773271dbe7bfd5324eed74b4f05976
+deleted: sha256:6179651578fb746d2a1e4390d958e21d8f04e66f32b30f8d0430f1438e03a956
+deleted: sha256:9ad7a340d399a43377b71e49528f694e38c44a4d5178354743770f0f94394d5c
+deleted: sha256:480c5e43e2bf9487e00bd6303fb8125d03a37a416a1ce28ef62883770bcd2234
+deleted: sha256:11c84cbd600176332e2c8e72e16f723e2bc0bdcf254321731d2e8f5742d6f5bf
+deleted: sha256:0883f3686c47d32d0f0405107273ab1404f4105bf21b017c9252e7ab1703028d
+deleted: sha256:cf160685867b2681c4d5545de8b4697892e4b2f82972fdc3f9d919041aa13006
+deleted: sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a
+untagged: nginx:latest
+untagged: nginx@sha256:6650513efd1d27c1f8a5351cbd33edf85cc7e0d9d0fcb4ffb23d8fa89b601ba8
+deleted: sha256:3f8a00f137a0d2c8a2163a09901e28e2471999fde4efc2f9570b91f1c30acf94
+deleted: sha256:ccfe545858415bccd69b8edff4da7344d782985f22ad4398bdaa7358d3388d15
+deleted: sha256:e34f63c02e162795cc8a2b43d1a3ff0ccd6d3456ce12aebb74452e252d1ecb8a
+deleted: sha256:cf7515030d4de4fb66994e0d9fccbaf19fcfbf46f7dad8cf895051750b840128
+deleted: sha256:1486739bc51436dd10d2bc1d45e130771c73d3aee35e49971905aa767d195342
+deleted: sha256:452008e5f3c114989bfc978a2829cf061f0868463f3553b4e20c964a41eda749
+deleted: sha256:4695cdfb426a05673a100e69d2fe9810d9ab2b3dd88ead97c6a3627246d83815
+untagged: alpine:latest
+untagged: alpine@sha256:69665d02cb32192e52e07644d76bc6f25abeb5410edc1c7a81a10ba3f0efb90a
+deleted: sha256:b2aa39c304c27b96c1fef0c06bee651ac9241d49c4fe34381cab8453f9a89c7d
+deleted: sha256:7cd52847ad775a5ddc4b58326cf884beee34544296402c6292ed76474c686d39
+untagged: kindest/node@sha256:f52781bc0d7a19fb6c405c2af83abfeb311f130707a0e219175677e366cc45d1
+deleted: sha256:d8644f660df0e5af6a7c882c98a253788da4b85aa33723136277c135fbe9188b
+deleted: sha256:62e8ad081d169a7617f31fafc6c5e0fc1944f5ce703d3e116e3f9c2905fa3276
+deleted: sha256:20ce6fa94f297a809c755dd996c6e031f1953f4e0851731eb4d92e3ee1109b0c
+
+Total reclaimed space: 2.195GB
+sammy@Ubuntu22:~$ kind create cluster
+Creating cluster "kind" ...
+ ✓ Ensuring node image (kindest/node:v1.25.3) 🖼 
+ ✓ Preparing nodes 📦  
+ ✓ Writing configuration 📜 
+ ✓ Starting control-plane 🕹️ 
+ ✓ Installing CNI 🔌 
+ ✓ Installing StorageClass 💾 
+Set kubectl context to "kind-kind"
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-kind
+
+Thanks for using kind! 😊
+sammy@Ubuntu22:~$ kubectl apply -f ./run-my-nginx.yaml
+deployment.apps/my-nginx created
+sammy@Ubuntu22:~$ kind load docker-image nginx:latest
+ERROR: image: "nginx:latest" not present locally
+sammy@Ubuntu22:~$ docker pull nginx:latest
+latest: Pulling from library/nginx
+3f9582a2cbe7: Pull complete 
+9a8c6f286718: Pull complete 
+e81b85700bc2: Pull complete 
+73ae4d451120: Pull complete 
+6058e3569a68: Pull complete 
+3a1b8f201356: Pull complete 
+Digest: sha256:aa0afebbb3cfa473099a62c4b32e9b3fb73ed23f2a75a65ce1d4b4f55a5c2ef2
+Status: Downloaded newer image for nginx:latest
+docker.io/library/nginx:latest
+sammy@Ubuntu22:~$ kind load docker-image nginx:latest
+Image: "" with ID "sha256:904b8cb13b932e23230836850610fa45dce9eb0650d5618c2b1487c2a4f577b8" not yet present on node "kind-control-plane", loading...
+sammy@Ubuntu22:~$ kubectl get pods -l run=my-nginx -o wide
+NAME                        READY   STATUS             RESTARTS   AGE   IP           NODE                 NOMINATED NODE   READINESS GATES
+my-nginx-77d5cb496b-4s2k6   0/1     ImagePullBackOff   0          5m    10.244.0.6   kind-control-plane   <none>           <none>
+my-nginx-77d5cb496b-5kffn   0/1     ImagePullBackOff   0          5m    10.244.0.5   kind-control-plane   <none>           <none>
+sammy@Ubuntu22:~$ kind load docker-image nginx
+Image: "nginx" with ID "sha256:904b8cb13b932e23230836850610fa45dce9eb0650d5618c2b1487c2a4f577b8" found to be already present on all nodes.
+sammy@Ubuntu22:~$ kubectl get pods -l run=my-nginx -o wide
+NAME                        READY   STATUS             RESTARTS   AGE    IP           NODE                 NOMINATED NODE   READINESS GATES
+my-nginx-77d5cb496b-4s2k6   0/1     ImagePullBackOff   0          6m6s   10.244.0.6   kind-control-plane   <none>           <none>
+my-nginx-77d5cb496b-5kffn   0/1     ImagePullBackOff   0          6m6s   10.244.0.5   kind-control-plane   <none>           <none>
+sammy@Ubuntu22:~$ kubectl get pods -l run=my-nginx -o wide
+NAME                        READY   STATUS             RESTARTS   AGE     IP           NODE                 NOMINATED NODE   READINESS GATES
+my-nginx-77d5cb496b-4s2k6   0/1     ImagePullBackOff   0          8m34s   10.244.0.6   kind-control-plane   <none>           <none>
+my-nginx-77d5cb496b-5kffn   0/1     ImagePullBackOff   0          8m34s   10.244.0.5   kind-control-plane   <none>           <none>
+sammy@Ubuntu22:~$ kind delete cluster
+Deleting cluster "kind" ...
+sammy@Ubuntu22:~$ sudo docker ps -a
+[sudo] password for sammy: 
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+sammy@Ubuntu22:~$ sudo docker system pune -a
+unknown shorthand flag: 'a' in -a
+See 'docker system --help'.
+
+Usage:  docker system COMMAND
+
+Manage Docker
+
+Commands:
+  df          Show docker disk usage
+  events      Get real time events from the server
+  info        Display system-wide information
+  prune       Remove unused data
+
+Run 'docker system COMMAND --help' for more information on a command.
+
+sammy@Ubuntu22:~$ sudo docker system prune -a
+WARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all images without at least one container associated to them
+  - all build cache
+
+Are you sure you want to continue? [y/N] y
+Deleted Networks:
+kind
+
+Deleted Images:
+untagged: nginx:latest
+untagged: nginx@sha256:aa0afebbb3cfa473099a62c4b32e9b3fb73ed23f2a75a65ce1d4b4f55a5c2ef2
+deleted: sha256:904b8cb13b932e23230836850610fa45dce9eb0650d5618c2b1487c2a4f577b8
+deleted: sha256:2c19cc81bd7d9245f864a8dad55fc439a503efbc9a6f971307099c426371e5df
+deleted: sha256:a244752d2cc30ced3987603eb318fdf7ddd1f16a9c04de65fe44bd849ac79b1a
+deleted: sha256:09d2e7b44137eaaff2c092a9e956f63074c8d4fd72870e35a064d8dabc3c3351
+deleted: sha256:a6ecfbc1b8be1e553e7b9a5ca036e449a51c46cb22ae3193e67a72d4273aa8ca
+deleted: sha256:26b53bdf904af4f66504b2cdbc6dbf2f8aa4fdc74284b4de2389ae96c1b3ea05
+deleted: sha256:650abce4b096b06ac8bec2046d821d66d801af34f1f1d4c5e272ad030c7873db
+untagged: kindest/node@sha256:f52781bc0d7a19fb6c405c2af83abfeb311f130707a0e219175677e366cc45d1
+deleted: sha256:d8644f660df0e5af6a7c882c98a253788da4b85aa33723136277c135fbe9188b
+deleted: sha256:62e8ad081d169a7617f31fafc6c5e0fc1944f5ce703d3e116e3f9c2905fa3276
+deleted: sha256:20ce6fa94f297a809c755dd996c6e031f1953f4e0851731eb4d92e3ee1109b0c
+
+Total reclaimed space: 1.04GB
+sammy@Ubuntu22:~$ kind create cluster
+Creating cluster "kind" ...
+ ✓ Ensuring node image (kindest/node:v1.25.3) 🖼 
+ ✓ Preparing nodes 📦  
+ ✓ Writing configuration 📜 
+ ✓ Starting control-plane 🕹️ 
+ ✓ Installing CNI 🔌 
+ ✓ Installing StorageClass 💾 
+Set kubectl context to "kind-kind"
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-kind
+
+Have a nice day! 👋
+sammy@Ubuntu22:~$ kubectl apply -f nginx.yaml
+service/nginx created
+deployment.apps/nginx created
+sammy@Ubuntu22:~$ kubectl get pods
+NAME                     READY   STATUS    RESTARTS   AGE
+nginx-5f65c7796d-dvzzz   0/1     Pending   0          6s
+sammy@Ubuntu22:~$ kubectl get pods
+NAME                     READY   STATUS              RESTARTS   AGE
+nginx-5f65c7796d-dvzzz   0/1     ErrImageNeverPull   0          9s
+sammy@Ubuntu22:~$ kubectl get pods
+NAME                     READY   STATUS              RESTARTS   AGE
+nginx-5f65c7796d-dvzzz   0/1     ErrImageNeverPull   0          11s
+sammy@Ubuntu22:~$ kind load docker-image nginx:latest
+ERROR: image: "nginx:latest" not present locally
+sammy@Ubuntu22:~$ docker pull nginx:latest
+latest: Pulling from library/nginx
+3f9582a2cbe7: Pull complete 
+9a8c6f286718: Pull complete 
+e81b85700bc2: Pull complete 
+73ae4d451120: Pull complete 
+6058e3569a68: Pull complete 
+3a1b8f201356: Pull complete 
+Digest: sha256:aa0afebbb3cfa473099a62c4b32e9b3fb73ed23f2a75a65ce1d4b4f55a5c2ef2
+Status: Downloaded newer image for nginx:latest
+docker.io/library/nginx:latest
+sammy@Ubuntu22:~$ kind load docker-image nginx:latest
+Image: "" with ID "sha256:904b8cb13b932e23230836850610fa45dce9eb0650d5618c2b1487c2a4f577b8" not yet present on node "kind-control-plane", loading...
+sammy@Ubuntu22:~$ kind load docker-image nginx:latest
+Image: "nginx:latest" with ID "sha256:904b8cb13b932e23230836850610fa45dce9eb0650d5618c2b1487c2a4f577b8" found to be already present on all nodes.
+sammy@Ubuntu22:~$ kubectl get pods
+NAME                     READY   STATUS    RESTARTS   AGE
+nginx-5f65c7796d-dvzzz   1/1     Running   0          58s
+sammy@Ubuntu22:~$ kubectl apply -f ./run-my-nginx.yaml
+deployment.apps/my-nginx created
+sammy@Ubuntu22:~$ kind load docker-image nginx:latest
+Image: "nginx:latest" with ID "sha256:904b8cb13b932e23230836850610fa45dce9eb0650d5618c2b1487c2a4f577b8" found to be already present on all nodes.
+sammy@Ubuntu22:~$ kubectl get pods -l run=my-nginx -o wide
+NAME                        READY   STATUS    RESTARTS   AGE   IP           NODE                 NOMINATED NODE   READINESS GATES
+my-nginx-6745b799cd-jg8df   1/1     Running   0          18s   10.244.0.7   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-ljr2n   1/1     Running   0          18s   10.244.0.6   kind-control-plane   <none>           <none>
+sammy@Ubuntu22:~$ kubectl get pods -l run=my-nginx -o custom-columns=POD_IP:.status.podIPs
+    POD_IP
+    [map[ip:10.244.3.4]]
+    [map[ip:10.244.2.5]]
+POD_IP
+[map[ip:10.244.0.7]]
+[map[ip:10.244.0.6]]
+POD_IP: command not found
+[map[ip:10.244.3.4]]: command not found
+[map[ip:10.244.2.5]]: command not found
+sammy@Ubuntu22:~$ kubectl get pods -l run=my-nginx -o custom-columns=POD_IP:.status.podIPs
+POD_IP
+[map[ip:10.244.0.7]]
+[map[ip:10.244.0.6]]
+sammy@Ubuntu22:~$ kubectl expose deployment/my-nginx
+service/my-nginx exposed
+sammy@Ubuntu22:~$ kubectl get svc my-nginx
+NAME       TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)   AGE
+my-nginx   ClusterIP   10.96.4.252   <none>        80/TCP    44s
+sammy@Ubuntu22:~$ kubectl describe svc my-nginx
+Name:              my-nginx
+Namespace:         default
+Labels:            <none>
+Annotations:       <none>
+Selector:          run=my-nginx
+Type:              ClusterIP
+IP Family Policy:  SingleStack
+IP Families:       IPv4
+IP:                10.96.4.252
+IPs:               10.96.4.252
+Port:              <unset>  80/TCP
+TargetPort:        80/TCP
+Endpoints:         10.244.0.6:80,10.244.0.7:80
+Session Affinity:  None
+Events:            <none>
+sammy@Ubuntu22:~$ kubectl get endpointslices -l kubernetes.io/service-name=my-nginx
+NAME             ADDRESSTYPE   PORTS   ENDPOINTS               AGE
+my-nginx-tpggn   IPv4          80      10.244.0.6,10.244.0.7   2m11s
+sammy@Ubuntu22:~$ kubectl get services kube-dns --namespace=kube-system
+NAME       TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)                  AGE
+kube-dns   ClusterIP   10.96.0.10   <none>        53/UDP,53/TCP,9153/TCP   9m49s
+sammy@Ubuntu22:~$ make keys KEY=/tmp/nginx.key CERT=/tmp/nginx.crt
+kubectl create secret tls nginxsecret --key /tmp/nginx.key --cert /tmp/nginx.crt
+make: *** No rule to make target 'keys'.  Stop.
+error: Cannot read file /tmp/nginx.crt, open /tmp/nginx.crt: no such file or directory
+sammy@Ubuntu22:~$ make keys KEY=/tmp/nginx.key CERT=/tmp/nginx.crt
+make: *** No rule to make target 'keys'.  Stop.
+sammy@Ubuntu22:~$ sudo make keys KEY=/tmp/nginx.key CERT=/tmp/nginx.crt
+make: *** No rule to make target 'keys'.  Stop.
+sammy@Ubuntu22:~$ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /d/tmp/nginx.key -out /d/tmp/nginx.crt -subj "/CN=my-nginx/O=my-nginx"
+..+.......+.....+.+..+...+....+...+.................+...+.......+.....+...+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*...+...+..+....+.....+....+.....+...+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*...+.....+.......+..+...+......+.+.....+...+......+.+......+..+.............+...+..+...................+.....+....+......+...+...+..+................+.....+......+.+...+......+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.........+..+.+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*...+........+...+.+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*......+.....+......+....+...........+.............+......+...+..+....+..+.......+...+..+..........+..+........................+.+........+.............+...+.....+............+.............+......+...........+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+req: Can't open "/d/tmp/nginx.key" for writing, No such file or directory
+sammy@Ubuntu22:~$ curl http://10.96.4.252::8080
+curl: (3) URL using bad/illegal format or missing URL
+sammy@Ubuntu22:~$ curl http://10.96.4.252::80
+curl: (3) URL using bad/illegal format or missing URL
+sammy@Ubuntu22:~$ curl http://10.96.4.252:8080
+^C
+sammy@Ubuntu22:~$ kubectl apply -f multi2.yaml
+pod/multi-container-pod created
+sammy@Ubuntu22:~$ docker pull alpine:latest
+latest: Pulling from library/alpine
+63b65145d645: Pull complete 
+Digest: sha256:ff6bdca1701f3a8a67e328815ff2346b0e4067d32ec36b7992c1fdc001dc8517
+Status: Downloaded newer image for alpine:latest
+docker.io/library/alpine:latest
+sammy@Ubuntu22:~$ kind load docker-image alpine:latest
+Image: "" with ID "sha256:b2aa39c304c27b96c1fef0c06bee651ac9241d49c4fe34381cab8453f9a89c7d" not yet present on node "kind-control-plane", loading...
+sammy@Ubuntu22:~$ kubectl get pods -o wide
+NAME                        READY   STATUS    RESTARTS   AGE   IP           NODE                 NOMINATED NODE   READINESS GATES
+multi-container-pod         1/1     Running   0          39s   10.244.0.8   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-jg8df   1/1     Running   0          23m   10.244.0.7   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-ljr2n   1/1     Running   0          23m   10.244.0.6   kind-control-plane   <none>           <none>
+nginx-5f65c7796d-dvzzz      1/1     Running   0          25m   10.244.0.2   kind-control-plane   <none>           <none>
+sammy@Ubuntu22:~$ kubectl exec -it <multi-container-pod> sh
+bash: multi-container-pod: No such file or directory
+sammy@Ubuntu22:~$ kubectl exec -it multi-container-pod sh
+kubectl exec [POD] [COMMAND] is DEPRECATED and will be removed in a future version. Use kubectl exec [POD] -- [COMMAND] instead.
+/ # ping 10.244.0.7
+PING 10.244.0.7 (10.244.0.7): 56 data bytes
+64 bytes from 10.244.0.7: seq=0 ttl=63 time=0.213 ms
+64 bytes from 10.244.0.7: seq=1 ttl=63 time=0.217 ms
+64 bytes from 10.244.0.7: seq=2 ttl=63 time=0.413 ms
+^C
+--- 10.244.0.7 ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 0.213/0.281/0.413 ms
+/ # ^C
+/ # quit
+sh: quit: not found
+/ # end
+sh: end: not found
+/ # q
+sh: q: not found
+/ # exit
+command terminated with exit code 127
+sammy@Ubuntu22:~$ kubectl get endpointslices -l kubernetes.io/service-name=my-nginx
+NAME             ADDRESSTYPE   PORTS   ENDPOINTS               AGE
+my-nginx-tpggn   IPv4          80      10.244.0.6,10.244.0.7   24m
+sammy@Ubuntu22:~$ kubectl exec -it multi-container-pod sh
+kubectl exec [POD] [COMMAND] is DEPRECATED and will be removed in a future version. Use kubectl exec [POD] -- [COMMAND] instead.
+/ # curl 10.96.4.252:80
+sh: curl: not found
+/ # ^C
+/ # exit
+command terminated with exit code 130
+sammy@Ubuntu22:~$ docker pull Busybox:latest
+invalid reference format: repository name must be lowercase
+sammy@Ubuntu22:~$ docker pull busybox:latest
+latest: Pulling from library/busybox
+4b35f584bb4f: Pull complete 
+Digest: sha256:b5d6fe0712636ceb7430189de28819e195e8966372edfc2d9409d79402a0dc16
+Status: Downloaded newer image for busybox:latest
+docker.io/library/busybox:latest
+sammy@Ubuntu22:~$ kubectl apply -f mycurlpod.yaml
+pod/busy created
+sammy@Ubuntu22:~$ kind load docker-image busybox:latest
+Image: "" with ID "sha256:7cfbbec8963d8f13e6c70416d6592e1cc10f47a348131290a55d43c3acab3fb9" not yet present on node "kind-control-plane", loading...
+sammy@Ubuntu22:~$ kubectl get pods -o wide
+NAME                        READY   STATUS    RESTARTS   AGE     IP           NODE                 NOMINATED NODE   READINESS GATES
+busy                        1/1     Running   0          2m17s   10.244.0.9   kind-control-plane   <none>           <none>
+multi-container-pod         1/1     Running   0          14m     10.244.0.8   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-jg8df   1/1     Running   0          37m     10.244.0.7   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-ljr2n   1/1     Running   0          37m     10.244.0.6   kind-control-plane   <none>           <none>
+nginx-5f65c7796d-dvzzz      1/1     Running   0          40m     10.244.0.2   kind-control-plane   <none>           <none>
+sammy@Ubuntu22:~$ kubectl run mycurlpod --image=curlimages/curl -i --tty -- sh
+^Csammy@Ubuntu22:~$ kubectget pods -o wide
+NAME                        READY   STATUS              RESTARTS   AGE     IP           NODE                 NOMINATED NODE   READINESS GATES
+busy                        1/1     Running             0          3m12s   10.244.0.9   kind-control-plane   <none>           <none>
+multi-container-pod         1/1     Running             0          15m     10.244.0.8   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-jg8df   1/1     Running             0          38m     10.244.0.7   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-ljr2n   1/1     Running             0          38m     10.244.0.6   kind-control-plane   <none>           <none>
+mycurlpod                   0/1     ContainerCreating   0          16s     <none>       kind-control-plane   <none>           <none>
+nginx-5f65c7796d-dvzzz      1/1     Running             0          41m     10.244.0.2   kind-control-plane   <none>           <none>
+sammy@Ubuntu22:~$ kubectl get pods -o wide
+NAME                        READY   STATUS              RESTARTS   AGE     IP           NODE                 NOMINATED NODE   READINESS GATES
+busy                        1/1     Running             0          3m18s   10.244.0.9   kind-control-plane   <none>           <none>
+multi-container-pod         1/1     Running             0          15m     10.244.0.8   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-jg8df   1/1     Running             0          38m     10.244.0.7   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-ljr2n   1/1     Running             0          38m     10.244.0.6   kind-control-plane   <none>           <none>
+mycurlpod                   0/1     ContainerCreating   0          22s     <none>       kind-control-plane   <none>           <none>
+nginx-5f65c7796d-dvzzz      1/1     Running             0          41m     10.244.0.2   kind-control-plane   <none>           <none>
+sammy@Ubuntu22:~$ kubectl get pods -o wide
+NAME                        READY   STATUS              RESTARTS   AGE     IP           NODE                 NOMINATED NODE   READINESS GATES
+busy                        1/1     Running             0          3m19s   10.244.0.9   kind-control-plane   <none>           <none>
+multi-container-pod         1/1     Running             0          15m     10.244.0.8   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-jg8df   1/1     Running             0          38m     10.244.0.7   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-ljr2n   1/1     Running             0          38m     10.244.0.6   kind-control-plane   <none>           <none>
+mycurlpod                   0/1     ContainerCreating   0          23s     <none>       kind-control-plane   <none>           <none>
+nginx-5f65c7796d-dvzzz      1/1     Running             0          41m     10.244.0.2   kind-control-plane   <none>           <none>
+sammy@Ubuntu22:~$ kubectl get pods -o wide
+NAME                        READY   STATUS              RESTARTS   AGE     IP           NODE                 NOMINATED NODE   READINESS GATES
+busy                        1/1     Running             0          3m21s   10.244.0.9   kind-control-plane   <none>           <none>
+multi-container-pod         1/1     Running             0          15m     10.244.0.8   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-jg8df   1/1     Running             0          38m     10.244.0.7   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-ljr2n   1/1     Running             0          38m     10.244.0.6   kind-control-plane   <none>           <none>
+mycurlpod                   0/1     ContainerCreating   0          25s     <none>       kind-control-plane   <none>           <none>
+nginx-5f65c7796d-dvzzz      1/1     Running             0          41m     10.244.0.2   kind-control-plane   <none>           <none>
+sammy@Ubuntu22:~$ kubectl get pods -o wide
+NAME                        READY   STATUS              RESTARTS   AGE     IP           NODE                 NOMINATED NODE   READINESS GATES
+busy                        1/1     Running             0          3m22s   10.244.0.9   kind-control-plane   <none>           <none>
+multi-container-pod         1/1     Running             0          15m     10.244.0.8   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-jg8df   1/1     Running             0          38m     10.244.0.7   kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-ljr2n   1/1     Running             0          38m     10.244.0.6   kind-control-plane   <none>           <none>
+mycurlpod                   0/1     ContainerCreating   0          26s     <none>       kind-control-plane   <none>           <none>
+nginx-5f65c7796d-dvzzz      1/1     Running             0          41m     10.244.0.2   kind-control-plane   <none>           <none>
+sammy@Ubuntu22:~$ kubectl get pods -o wide
+NAME                        READY   STATUS             RESTARTS   AGE     IP            NODE                 NOMINATED NODE   READINESS GATES
+busy                        1/1     Running            0          3m42s   10.244.0.9    kind-control-plane   <none>           <none>
+multi-container-pod         1/1     Running            0          16m     10.244.0.8    kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-jg8df   1/1     Running            0          38m     10.244.0.7    kind-control-plane   <none>           <none>
+my-nginx-6745b799cd-ljr2n   1/1     Running            0          38m     10.244.0.6    kind-control-plane   <none>           <none>
+mycurlpod                   0/1     ImagePullBackOff   0          46s     10.244.0.10   kind-control-plane   <none>           <none>
+nginx-5f65c7796d-dvzzz      1/1     Running            0          41m     10.244.0.2    kind-control-plane   <none>           <none>
+sammy@Ubuntu22:~$ kubectl exec -it multi-container-pod sh
+kubectl exec [POD] [COMMAND] is DEPRECATED and will be removed in a future version. Use kubectl exec [POD] -- [COMMAND] instead.
+/ # exit
+sammy@Ubuntu22:~$ kubectl exec -it busy sh
+kubectl exec [POD] [COMMAND] is DEPRECATED and will be removed in a future version. Use kubectl exec [POD] -- [COMMAND] instead.
+/ # 
+/ # wget curl 10.96.4.252:80
+wget: bad address 'curl'
+/ # wget 10.96.4.252:80
+Connecting to 10.96.4.252:80 (10.96.4.252:80)
+saving to 'index.html'
+index.html           100% |************************************************************************************|   615  0:00:00 ETA
+'index.html' saved
+/ # ls
+bin           etc           index.html    lib64         product_name  root          tmp           var
+dev           home          lib           proc          product_uuid  sys           usr
+/ # cat index.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+/ # 
+
