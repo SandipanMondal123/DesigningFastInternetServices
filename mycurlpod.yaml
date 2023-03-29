@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busy
+spec:
+  nodeName: kind-worker
+  containers:
+  - name: busy-pod
+    image: busybox
+    imagePullPolicy: Never
+    command: ["watch", "-n", "10", "wget", "localhost"]
+
+
+

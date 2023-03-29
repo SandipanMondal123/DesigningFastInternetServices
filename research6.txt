@@ -1,0 +1,7 @@
+kind create cluster --config kind-multi-node-config.yaml
+kubectl apply -f ./run-my-nginx.yaml
+kind load docker-image nginx:latest
+kubectl expose deployment/my-nginx
+kubectl apply -f ./mycurlpod.yaml
+kind load docker-image busybox:latest
+kubectl exec -it busy
