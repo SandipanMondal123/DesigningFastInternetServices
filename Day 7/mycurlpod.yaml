@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busy
+spec:
+  nodeName: minikube
+  containers:
+    - name: busy-pod
+      image: busybox
+      imagePullPolicy: Always
+      command: ["watch", "-n", "10", "wget", "localhost"]

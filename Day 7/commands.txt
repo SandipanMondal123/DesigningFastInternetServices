@@ -1,0 +1,7 @@
+1. minikube start --nodes 2
+2. kubectl apply -f ./Desktop/run-my-nginx.yaml
+3. kubectl apply -f ./Desktop/mycurlpod.yaml
+4. kubectl exec -it busy sh
+5. wget <IP address of nginxserver> **use kubectl get pods -o wide for help
+6. Cat index.html
+
