@@ -5,3 +5,7 @@
 5. wget <IP address of nginxserver> **use kubectl get pods -o wide for help
 6. Cat index.html
 
+
+Learn more about IP TABLES and UNDERSTAND
+
+Host configuration -> learn how to manually set it up (kubeadm?)

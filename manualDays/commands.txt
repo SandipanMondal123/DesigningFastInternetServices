@@ -1,0 +1,27 @@
+1. Install docker on both machines
+
+sudo apt-get update
+sudo apt-get install docker.io -y
+
+2. Install kubernetes on both machines
+
+sudo apt-get update && sudo apt-get install -y apt-transport-https curl
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+sudo apt-get update
+sudo apt-get install -y kubelet kubeadm kubectl
+
+3. Create the master node (only on one of the machines)
+
+sudo kubeadm init --pod-network-cidr=192.168.0.0/16
+
+4. Run the command that is outputted by #3 in the worker nodes.
+
+5. Install Flannel Network on the Master Node (only on one of the mahcines)
+
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
+###Getting error at step #5 -> " The connection to the server localhost:8080 was refused - did you specify the right host or port?"
+###Possibly kubernetes API server is not running or can't be acessed
+### Taking a look at this currently -> https://devopscube.com/setup-kubernetes-cluster-kubeadm/ 
+
