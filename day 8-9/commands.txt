@@ -1,4 +1,4 @@
-Iteration 1: It doesn't work. I believe I was able to connect both nodes together in one cluster, but I didn't set up the ip tables (4/17-4/21 ~6-7hrs)
+Attempt 1: It doesn't work. I believe I was able to connect both nodes together in one cluster, but I didn't set up the ip tables (4/17-4/21 ~6-7hrs)
 
 1. Install docker on both machines
 
@@ -27,7 +27,7 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 ###Possibly kubernetes API server is not running or can't be acessed
 
 
-Iteration 2: I'm 99% certain that this should be working, but it isn't and I can't seem to pinpoint why this is happening (4/24-4/28 ~9hrs)
+Attempt 2: Progress so far (sometimes get error at init IP command)
 
 
 ON MASTER NODE:
@@ -38,6 +38,7 @@ br_netfilter
 EOF
 
 sudo modprobe overlay
+
 sudo modprobe br_netfilter
 
 cat <<EOF | sudo tee /etc/sysctl.d/99-kubernetes-cri.conf 
@@ -55,12 +56,9 @@ sudo mkdir -p /etc/containerd
 
 sudo containerd config default | sudo tee /etc/containerd/config.toml
 
-
 sudo systemctl restart containerd
 
-
 sudo swapoff -a
-
 
 sudo apt-get update && sudo apt-get install -y apt-transport-https curl
 
@@ -78,7 +76,7 @@ sudo apt-get install -y kubelet=1.20.1-00 kubeadm=1.20.1-00 kubectl=1.20.1-00
 
 sudo apt-mark hold kubelet kubeadm kubectl
 
-sudo kubeadm init --pod-network-cidr=192.168.0.0/16 ##### Issue occurs here. If this went through, I'm almost certain I would've been able to figure this out.
+sudo kubeadm init --pod-network-cidr=192.168.0.0/16 ##### status healthy
 
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 
