@@ -1,6 +1,6 @@
 **Hello everyone**,
 
-Welcome to my Research Repository. For the past semester (2023 Spring), I had the fantastic opportunity to do research with Professor Srinivas Narayana Ganapathy on "Designing Fast Internet Services." If you want you can skip to the end for the conclusion for a quick TLDR.
+Welcome to my Research Repository. For the past semester (2023 Spring), I had the fantastic opportunity to do research with Professor Srinivas Narayana Ganapathy (who was also my 198:352 - Internet Technology Professor) on "Designing Fast Internet Services." If you want you can skip to the end for the conclusion for a quick TLDR.
 
 In this repository, I sorted my work into "days" where each folder contains a specific task to learn more about the inner workings of certain technologies (like Docker) and more. The assignments were sometimes one week, but some spanned a few weeks. It is noted that I also worked/learned more than what is shown in this repository.
 
