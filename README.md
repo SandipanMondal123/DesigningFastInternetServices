@@ -1,4 +1,4 @@
-Hello everyone,
+**Hello everyone**,
 
 Welcome to my Research Repository. For the past semester (2023 Spring), I had the fantastic opportunity to do research with Professor Srinivas Narayana Ganapathy on "Designing Fast Internet Services." If you want you can skip to the end for the conclusion for a quick TLDR.
 
