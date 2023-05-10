@@ -27,7 +27,7 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 ###Possibly kubernetes API server is not running or can't be acessed
 
 
-Attempt 2: Progress so far (sometimes get error at init IP command)
+Final Attempt 2:
 
 
 ON MASTER NODE:
